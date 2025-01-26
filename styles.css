@@ -17,6 +17,17 @@ i{
     font-style: italic;
 }
 
+#fixed-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    transition-delay: 2s;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-timing-function: ease-in-out;
+}
+
 /* section : Header-Banner */
 
 .grid-top-header{
@@ -35,6 +46,7 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: fit-content;
 }
 
 .top-header-grid-2 > p{
@@ -55,6 +67,7 @@ i{
 .navigation{
     display: flex;
     height: 80px;
+    min-height: fit-content;
     gap: 50px;
     align-items: center;
     padding: 20px 0px;
@@ -342,6 +355,7 @@ h2{
     align-items: center;
     justify-content: center;
     height: 130px;
+    object-fit: contain;
 }
 
 #value-proposition-section  div > a{
@@ -728,13 +742,7 @@ h2{
 
 .sm-icon{
     display: flex;
-    gap: 10px;
-}
-
-.icon{
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    gap: 20px;
 }
 
 .date{
@@ -764,7 +772,15 @@ h2{
 
 .card-3-para{
     line-height: 25px;
+}
 
+.icon{
+    font-size: 30px;
+}
+
+.SM{
+    clip-path: circle(50);
+    border-radius: 50%;
 }
 
 /* Section: Footer */
@@ -776,12 +792,27 @@ h2{
     align-items: center;
     font-size: 12px;
     background-color:rgb(7, 33, 90);
-    color: white;
+    color: white !important;
 }
 
 .footer-text{
+    color: white !important;
     text-decoration: none;
     outline: none !important;
+}
+
+.privacy-policy > a{
+    color: white;
+}
+
+.privacy-policy{
+    color: white;
+    text-decoration: none;
+    outline: none !important;
+}
+
+.privacy-policy:hover{
+    color: rgb(228, 114, 7);
 }
 
 
@@ -1361,6 +1392,12 @@ h2{
 /* Section: Service Overview Section */
 
 @media (max-width: 1500px){
+    #Service-Overview-Section{
+        display: flex;
+        align-items: center !important;
+        min-height: fit-content;
+    }
+
     .first-card, .second-card{
         width: 50%;
     }
@@ -1374,6 +1411,9 @@ h2{
 @media (max-width: 925px){
     #Service-Overview-Section{
         padding: 30px 30px 30px 30px;
+        display: flex;
+        align-items: center !important;
+        min-height: fit-content;
     }
 
     .service-overview-container{
@@ -2092,6 +2132,30 @@ h2{
         text-align: center;
         text-decoration: none;
         outline: none !important;
+    }
+
+    .card-1{    /* Locations */
+        order: -2;
+    }
+
+    .card-4{ /* On Social */
+        order: -1;
+    }
+
+    .card-2{ /* The Latest */
+        order: 0;
+    }
+
+    .card-5{ /* Part of Card-2 : Latest */
+        order: 1;
+    }
+
+    .card-3{ /* Podcast */
+        order: 2;
+    }
+
+    .icon{
+        font-size: 30px;
     }
 }
 
