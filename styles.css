@@ -68,7 +68,7 @@ i{
     top: 0%;
     opacity: 1;
     visibility: visible;
-    z-index: 3;
+    z-index: 4;
     transition-property: all;
     transition-duration: 2s;
     transition-delay: 0s;
