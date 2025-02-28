@@ -72,7 +72,9 @@ i{
     transition-property: all;
     transition-duration: 2s;
     transition-delay: 0s;
-    transition: top 2s cubic-bezier(0.59, 0.01, 0.57, 0.94), opacity 0.1s cubic-bezier(0.59, 0.01, 0.57, 0.94), visibility 0.1s cubic-bezier(0.59, 0.01, 0.57, 0.94);
+    /* transition: top 2s cubic-bezier(0.59, 0.01, 0.57, 0.94), opacity 0.1s cubic-bezier(0.59, 0.01, 0.57, 0.94), visibility 0.1s cubic-bezier(0.59, 0.01, 0.57, 0.94); */
+    transition: top 1.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+
 }
 
 .navigation{
@@ -896,7 +898,7 @@ h2{
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 .top-scroll-shortcut-icon.active{
@@ -1310,7 +1312,7 @@ html{
         transition-property: all;
         transition-duration: 0.2s;
         transition-timing-function: ease;
-        z-index: 4;
+        z-index: 5;
         list-style-type: none;
         text-decoration: none;
     }
@@ -2382,4 +2384,29 @@ html{
         width: 100%;
         color: white;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#fixed-header {
+    position: fixed;
+    top: -100px; /* Start slightly above */
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.2s cubic-bezier(0.71,-0.3, 0.47, 1.2), opacity 0.2s cubic-bezier(0.71,-0.3, 0.47, 1.2), visibility 0.3s cubic-bezier(0.71,-0.3, 0.47, 1.2);
+}
+
+#fixed-header.active {
+    top: 0px; /* Moves down smoothly */
+    opacity: 1;
+    visibility: visible;
 }
