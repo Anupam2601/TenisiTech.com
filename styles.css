@@ -2410,3 +2410,80 @@ html{
     opacity: 1;
     visibility: visible;
 }
+
+
+
+
+
+/* #testimonial {
+    background-color: rgba(224, 220, 220, 0.616);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60%;
+}
+
+.testimonial-slide {
+    display: none;
+    max-width: 600px;
+    font-size: 18px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.dots-container {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #007bff;
+} */
